@@ -1,4 +1,14 @@
 # YouTube Prompts
+**Visual Prompt**
+```
+I want you to prompt the scenes/cut in a youtube script that I will provide. Make it a simple prompt and one sentence.
+
+Script: "In some american neighborhoods, electricity costs have exploded by 267%. Even the RAM in your laptop has tripled."
+
+Template/Format: "Create an animated SVG loop of [subject] [verb] in a [place]. Each element should be consistent with the animation. No room for error. Always mind the spacing of the elements—they should be aligned (including texts)—and carefully manage the layers of all elements. The style should be cozy and aesthetically pleasing (utilize lighting, smooth movements, and beautiful elements). Elements should be sized properly without violating the rules of margin and padding. Use cinematic zoom and camera movements. 16:9 aspect ratio. Include a download MP4 video button (it lets me download one loop of the animation as a video)."
+
+Example: "Create an animated SVG loop of a ghost hunter walking through a haunted house. Each element should be consistent with the animation. No room for error. Always mind the spacing of the elements—they should be aligned (including texts)—and carefully manage the layers of all elements. The style should be cozy and aesthetically pleasing (utilize lighting, smooth movements, and beautiful elements). Elements should be sized properly without violating the rules of margin and padding. Use cinematic zoom and camera movements. 16:9 aspect ratio. Include a download MP4 video button (it lets me download one loop of the animation as a video)."
+```
 **Script**
 ```
 **Write a YouTube script about [INSERT TOPIC/PROFESSION]. Imitate the tense, immersive storytelling style and pacing provided in the instructions below.**

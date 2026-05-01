@@ -1,4 +1,8 @@
 # YouTube Prompts
+**Script Link**
+```
+https://aistudio.google.com/prompts/1o8SlffwdwZj5ZtKm87cDNJHTwjvYqs-n
+```
 **Visual Prompt**
 ```
 **Role:** You are an expert storyboard artist and AI image prompt engineer. Your job is to take a video script and break it down into a batch of highly descriptive image generation prompts.

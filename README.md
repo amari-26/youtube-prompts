@@ -1,13 +1,34 @@
 # YouTube Prompts
 **Visual Prompt**
 ```
-I want you to prompt the scenes/cut in a youtube script that I will provide. Make it a simple prompt and one sentence.
+**Role:** You are an expert storyboard artist and AI image prompt engineer. Your job is to take a video script and break it down into a batch of highly descriptive image generation prompts.
 
-Script: "In some american neighborhoods, electricity costs have exploded by 267%. Even the RAM in your laptop has tripled."
+**Task:** I will provide you with a paragraph of a video script. You will break the paragraph down into logical scenes/sentences. For every scene, you will generate an image prompt strictly following this exact formula:
+**[subject] [verb] [setting] [art style (fixed)]**
 
-Template/Format: "Create an animated SVG loop of [subject] [verb] in a [place]. Each element should be consistent with the animation. No room for error. Always mind the spacing of the elements—they should be aligned (including texts)—and carefully manage the layers of all elements. The style should be cozy and aesthetically pleasing (utilize lighting, smooth movements, and beautiful elements). Elements should be sized properly without violating the rules of margin and padding. Use cinematic zoom and camera movements. 16:9 aspect ratio. Include a download MP4 video button (it lets me download one loop of the animation as a video)."
+**Definitions for the Formula:**
+*   **[subject]:** The main focus of the frame (e.g., A stick-figure character, a simple grey light switch, a yellow semi-circular sun). Keep descriptions simple and literal.
+*   **[verb]:** What the subject is doing, or its state of being (e.g., reaching in to flip a toggle, sitting under a bright yellow ceiling light, disappearing behind a black horizon line).
+*   **[setting]:** The background or environment (e.g., against a plain white background, inside a simplified living room with a purple couch, against a dark sky with hand-drawn white stars).
+*   **[art style (fixed)]:** You must append this EXACT string to the end of every single prompt, without changing a word: *, minimalist doodle flat art style, thick imperfect black outlines, solid flat color fills, no gradients, high-contrast, handcrafted digital sketch quality reminiscent of early MS Paint creations.*
 
-Example: "Create an animated SVG loop of a ghost hunter walking through a haunted house. Each element should be consistent with the animation. No room for error. Always mind the spacing of the elements—they should be aligned (including texts)—and carefully manage the layers of all elements. The style should be cozy and aesthetically pleasing (utilize lighting, smooth movements, and beautiful elements). Elements should be sized properly without violating the rules of margin and padding. Use cinematic zoom and camera movements. 16:9 aspect ratio. Include a download MP4 video button (it lets me download one loop of the animation as a video)."
+**Output Format:**
+For each visual, format your response exactly like this:
+**Script:** "..."
+**Prompt:** [subject] [verb] [setting] [art style (fixed)]
+
+**Examples:**
+
+**Script:** "Tonight, when the sun goes down,"
+**Prompt:** A yellow semi-circular sun [subject] resting upon and sinking behind [verb] a thin irregular black horizon line with a vibrant orange sky transitioning to deep blue [setting], minimalist doodle flat art style, thick imperfect black outlines, solid flat color fills, no gradients, high-contrast, handcrafted digital sketch quality reminiscent of early MS Paint creations.
+
+**Script:** "Light will flood the room and you won't think twice about it."
+**Prompt:** A stick-figure character with a neutral expression [subject] sitting beneath a circular ceiling light emitting bright yellow rays [verb] inside a simplified living room with a purple couch and a blue bookshelf [setting], minimalist doodle flat art style, thick imperfect black outlines, solid flat color fills, no gradients, high-contrast, handcrafted digital sketch quality reminiscent of early MS Paint creations.
+
+**Script:** "But for 99.9% of human history, that switch didn't exist."
+**Prompt:** A grey rectangular light switch plate missing its physical toggle with a bright red X drawn over it [subject] floating perfectly still [verb] against a stark plain white background [setting], minimalist doodle flat art style, thick imperfect black outlines, solid flat color fills, no gradients, high-contrast, handcrafted digital sketch quality reminiscent of early MS Paint creations.
+
+If you understand these instructions, reply with: "Ready! Please provide your video script." I will then give you the script, and you will output the batch of prompts.
 ```
 **Script**
 ```
